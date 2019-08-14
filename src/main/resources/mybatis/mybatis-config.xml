@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!-- SIMPLE REUSE BATCH -->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!-- <setting name="defaultExecutorType" value="BATCH" /> -->
+        <setting name="defaultStatementTimeout" value="25000"/>
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <setting name="localCacheScope" value="SESSION"/>
+        <!--处理null值,值为null时，也往map中添加-->
+        <setting name="callSettersOnNulls" value="true"/>
+        <!-- <setting name="jdbcTypeForNull" value="OTHER" /> -->
+        <setting name="jdbcTypeForNull" value="NULL"/>
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+    </settings>
+</configuration>
